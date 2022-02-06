@@ -1,0 +1,321 @@
+*{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container::after,
+.container::before{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col33{
+    width: 33.33%;
+    padding: 0 15px;
+    float: left;
+}
+
+.col50{
+    width: 50%;
+    padding: 0 15px;
+    float: left;
+}
+
+
+/* header part css start */
+
+.header{
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+}
+
+.logo{
+    display: inline-block;
+    margin: 20px 0;
+}
+
+.menu{
+    float: right;
+    margin: 20px 0;
+}
+
+.menu ul{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.menu ul li{
+    /* float: left; */
+    display: inline-block;
+    position: relative;
+    padding: 0 15px;
+}
+
+.menu ul li a{
+    font-size: 20px;
+    font-weight: 700;
+    color: #15a4fa;
+}
+
+.menu ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #2d3950;
+    display: block;
+    margin: auto;
+}
+
+.menu ul li:hover::after{
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+/* header part css end */
+
+
+/* banner part css start */
+
+.banner{
+    background-image: url(../media/banner.jpg);
+    height: 120vh;
+    background-size: cover;
+    /* background-position: center; */
+    text-align: center;
+}
+
+.banner_text h1{
+    margin: 200px auto 30px;
+    font-size: 120px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+}
+
+.banner_text span{
+    width: 600px;
+    height: 3px;
+    background: #15a4fa;
+    display: block;
+    margin: auto;
+}
+
+.banner_text p{
+    color: #fff;
+    padding: 20px 0 35px 0;
+    font-size: 20px;
+}
+
+.banner_btn button{
+    border: 1px solid #15a4fa;
+    background: transparent;
+    color: #fff;
+    padding: 22px 35px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.banner_icon i{
+    font-size: 35px;
+    color: #fff;
+    padding: 140px 0 90px 0;
+}
+
+/* banner part css end */
+
+
+/* about part css start */
+
+#about{
+    background-color: #f6f9f9;
+    text-align: center;
+}
+
+.about_content h2{
+    font-size: 40px;
+    margin: 80px 0 30px 0;
+    color: #2d3950;
+}
+
+.about_content p{
+    color: #999;
+    font-size: 20px;
+    margin-bottom: 110px;
+    line-height: 35px;
+}
+
+/* about part css end */
+
+
+/* services part css start */
+
+#services .col33{
+    text-align: center;
+    margin: 65px 0;
+}
+
+.s_title h3{
+    font-size: 22px;
+    margin: 30px 0;
+}
+
+.s_subtitle p{
+    color: #999;
+    font-size: 15px;
+}
+
+/* services part css end */
+
+
+/* card part css start */
+
+#card{
+    background-color: #f6f9f9;
+    text-align: center;
+}
+
+.card_text{
+    margin: 80px 0;
+}
+
+.card_text h3{
+    font-size: 41px;
+    color: #2d3950;
+}
+
+.card_text p{
+    color: #999;
+    font-size: 15px;
+}
+
+.cards{
+    margin-bottom: 115px;
+}
+
+.cards .two{
+    padding-top: 15px;
+    display: inline-block;
+}
+
+
+
+/* card part css end */
+
+
+/* contact part css start */
+
+#contact{
+    background-image: url(../media/contactbg.jpg);
+    height: 700px;
+    text-align: center;
+}
+
+/* #contact .container{
+    width: 550px;
+} */
+
+.contact_text{
+    margin: 70px 0 50px 0;
+}
+
+.contact_text h3{
+    font-size: 41px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.contact_text p{
+    font-size: 15px;
+    color: #999;
+}
+
+form input{
+    width: 550px;
+    padding: 15px 10px;
+    background: transparent;
+    color: #999;
+}
+
+textarea{
+    background: transparent;
+    width: 550px;
+    color: #999;
+    font-size: 15px;
+}
+
+.form_btn input{
+    width: 140px;
+    height: 45px;
+    border: 1px solid #15a4fa;
+    margin-left: 405px;
+}
+
+.form_btn li{
+    margin-top: 10px;
+    color: #999;
+    list-style: none;
+}
+
+.form_btn li i{
+    padding-right: 8px;
+    margin-left: -375px;
+}
+
+/* contact part css end */
+
+
+/* footer part css start */
+
+.footer_text{
+    float: left;
+}
+
+.footer_text h4{
+    font-size: 15px;
+    color: #999;
+    margin: 40px 0;
+    display: block;
+}
+
+.footer_icons{
+    float: right;
+}
+
+.footer_icons ul li{
+    display: inline-block;
+}
+
+.footer_icons ul li i{
+    /* width: 40px;
+    height: 40px; */
+    border: 1px solid #15a4fa;
+    color: #fff;
+    background-color: #15a4fa;
+    text-align: center;
+    padding: 20px;
+    margin: 5px;
+}
+
+/* footer part css end */
